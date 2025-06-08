@@ -1,0 +1,15 @@
+  spring:
+    application:
+      name: ChatMe-SpringBoot
+
+    data:
+      mongodb:
+        username: AhmedMokhtar
+        password: Ahmed123
+        host: localhost
+        port: 27027
+        database: chatme_app
+        authentication-database: admin
+
+  server:
+    port: 8088
