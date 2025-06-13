@@ -10,7 +10,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Document
 public class User {
     @Id
-    private String nickname;
-    private String fullname;
+    private String nickName;
+    private String fullName;
     private Status status;
 }

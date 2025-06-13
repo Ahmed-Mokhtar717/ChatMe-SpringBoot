@@ -4,10 +4,10 @@
 
     data:
       mongodb:
-        username: AhmedMokhtar
-        password: Ahmed123
+        username: ahmed
+        password: ahmed
         host: localhost
-        port: 27027
+        port: 27017
         database: chatme_app
         authentication-database: admin
 
