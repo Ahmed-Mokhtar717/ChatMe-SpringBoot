@@ -17,7 +17,7 @@ public class ChatRoomService {
             boolean createNewRoomIfNotExists
     ) {
         return chatRoomRepository.findBySenderIdAndRecipientId(senderId, recipientId)
-                .map(ChatRoom::getId)
+                .map(ChatRoom::getChatId)
                 .or(() -> {
                    if (createNewRoomIfNotExists) {
                        var chatId= createChatId(senderId, recipientId);
