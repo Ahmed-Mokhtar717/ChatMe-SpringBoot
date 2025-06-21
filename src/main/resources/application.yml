@@ -10,6 +10,11 @@
         port: 27017
         database: chatme_app
         authentication-database: admin
+    servlet:
+      multipart:
+        max-file-size: 100MB
+        max-request-size: 100MB
+
 
   server:
     port: 8088

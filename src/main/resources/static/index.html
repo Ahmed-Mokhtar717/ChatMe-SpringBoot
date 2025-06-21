@@ -41,10 +41,11 @@
         <div class="chat-area" id="chat-messages">
         </div>
 
-        <form id="messageForm" name="messageForm" class="hidden">
+        <form id="messageForm" name="messageForm" class="hidden" enctype="multipart/form-data">
             <div class="message-input">
                 <input autocomplete="off" type="text" id="message" placeholder="Type your message...">
-                <button>Send</button>
+                <input type="file" id="fileInput" name="file">
+                <button type="submit">Send</button>
             </div>
         </form>
     </div>

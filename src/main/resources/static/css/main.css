@@ -202,3 +202,129 @@ a.logout {
     color: #fff;
     text-decoration: none;
 }
+
+.chat-pdf {
+    width: 250px;
+    height: 300px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.chat-image {
+    border-radius: 6px;
+    display: block;
+    max-width: 200px;
+    cursor: pointer;
+    object-fit: cover;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease;
+}
+
+.large-image {
+    max-width: 90vw;
+    max-height: 90vh;
+    border-radius: 10px;
+}
+
+.chat-image:hover {
+    transform: scale(1.05);
+}
+
+.chat-video {
+    max-width: 200px;
+    max-height:150px ;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease;
+}
+
+.large-video {
+    max-width: 90vw;
+    max-height: 90vh;
+    border-radius: 10px;
+}
+
+.chat-video:hover {
+    transform: scale(1.05);
+}
+
+.chat-pdf-object {
+    width: 200px;
+    height: 260px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;    /* إخفاء الـ scrollbar */
+    scrollbar-width: none;        /* Firefox */
+    -ms-overflow-style: none;     /* Internet Explorer و Edge القديم */
+
+    /* منع التفاعل داخل العنصر */
+    pointer-events: none;
+    user-select: none;
+}
+
+/* إخفاء الـ scrollbar في Webkit (Chrome, Safari) */
+.chat-pdf-object::-webkit-scrollbar {
+    display: none;
+}
+
+.file-label {
+    text-align: center;
+    margin-top: 5px;
+    font-size: 14px;
+    color: #555;
+}
+
+/*بقية الملفات*/
+.file-box {
+    width: 200px;
+    height: 120px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+}
+
+/* ستايل للـ iframe PDF preview */
+.chat-pdf-preview {
+    box-shadow: 0 0 8px rgba(0,0,0,0.15);
+}
+
+/* يمكنك تعديل لون الخلفية والظل لمربعات الملفات */
+.message.sender {
+    background-color: #dcf8c6;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+.message.receiver {
+    background-color: #fff;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+.lightbox-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+    cursor: pointer;
+}
+
+.lightbox-overlay img,
+.lightbox-overlay video {
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+}
