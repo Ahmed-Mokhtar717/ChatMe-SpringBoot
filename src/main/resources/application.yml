@@ -1,20 +1,15 @@
-  spring:
-    application:
-      name: ChatMe-SpringBoot
+spring:
+  application:
+    name: ChatMe-SpringBoot
 
-    data:
-      mongodb:
-        username: ahmed
-        password: ahmed
-        host: localhost
-        port: 27017
-        database: chatme_app
-        authentication-database: admin
-    servlet:
-      multipart:
-        max-file-size: 100MB
-        max-request-size: 100MB
+  data:
+    mongodb:
+      uri: mongodb://ahmed:ahmed@mongodb:27017/chatme_app?authSource=admin
 
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 100MB
 
-  server:
-    port: 8088
+server:
+  port: 8088
